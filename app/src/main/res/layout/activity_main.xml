@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+  <LinearLayout
+      android:id="@+id/container"
+      android:layout_width="match_parent"
+      android:layout_height="500dp"
+      android:background="#1afa29"
+      android:orientation="horizontal" />
+
+  <Button
+      android:id="@+id/play"
+      android:layout_width="wrap_content"
+      android:layout_height="100dp"
+      android:layout_marginLeft="2dp"
+      android:layout_marginBottom="-2dp"
+      android:layout_alignParentBottom="true"
+      android:text="开始游戏" />
+
+  <Button
+      android:id="@+id/stop_get"
+      android:layout_width="wrap_content"
+      android:layout_height="100dp"
+      android:layout_alignParentBottom="true"
+      android:layout_marginLeft="2dp"
+      android:layout_marginBottom="-2dp"
+
+      android:layout_toRightOf="@id/get"
+      android:text="停止抓牌"
+      android:textColorHighlight="#FFFFFF" />
+
+  <Button
+      android:id="@+id/get"
+      android:layout_width="wrap_content"
+      android:layout_height="100dp"
+      android:layout_alignParentBottom="true"
+      android:layout_marginLeft="2dp"
+      android:layout_marginBottom="-2dp"
+
+      android:layout_toRightOf="@id/play"
+      android:text="抓牌" />
+
+  <Button
+      android:id="@+id/replay"
+      android:layout_width="wrap_content"
+      android:layout_height="100dp"
+      android:layout_alignParentBottom="true"
+      android:layout_marginLeft="2dp"
+      android:layout_marginBottom="-2dp"
+
+      android:layout_toRightOf="@id/stop_get"
+      android:text="重新开始" />
+
+  <Button
+      android:id="@+id/shezhi"
+      android:layout_width="wrap_content"
+      android:layout_height="100dp"
+      android:layout_alignTop="@+id/replay"
+      android:layout_marginTop="-100dp"
+      android:text="设置"/>
+
+
+</RelativeLayout>
+
